@@ -7,22 +7,22 @@ const Header = () => {
         <header className={headerStyles.header}>
             <h1 >
                 <Link className={headerStyles.title} to="/">
-                    bulky media
+                    bulky media.
                 </Link>
             </h1>
-            <nav>
-                <ul>
+            <nav className={headerStyles.navMenu}>
+                <ul className={headerStyles.navList}>
                     <li>
-                        <Link to="/">Home</Link>
+                        <Link to="/">HOME</Link>
                     </li>
                     <li>
-                        <Link to="/about">About</Link>
+                        <Link to="/about">ABOUT</Link>
                     </li>
                     <li>
-                        <Link to="/blog">Blog</Link>
+                        <Link to="/blog">BLOG</Link>
                     </li>
                     <li>
-                        <Link to="/contact">Contact us</Link>
+                        <Link to="/contact">CONTACT US</Link>
                     </li>
                 </ul>
             </nav>

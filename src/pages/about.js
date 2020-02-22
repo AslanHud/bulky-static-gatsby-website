@@ -9,7 +9,6 @@ const AboutPage = () => {
             <h2>This is the about page.</h2>
             <p>Need a developer? <Link to="/contact">Contact us!</Link></p>
         </Layout>
-
     )
 }
 
