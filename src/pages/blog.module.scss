@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic');
+
+.blogPostList //list of posts
+{
+    li //individual posts
+    {
+        background-color: #f4f4f4;
+        list-style-type: none;
+        margin: 1rem 0;
+
+
+        display: block;
+        padding: 1rem; 
+        a 
+        {
+            color: #000000;
+            text-decoration: none;   
+            
+
+        }
+        h2
+        {
+            font-family: 'Montserrat';
+            margin: 0;
+        }
+        p
+        {
+            font-family: 'Montserrat';
+            font-size: 0.7rem;
+            font-style: italic;
+        }
+
+
+        a:hover
+        {
+            color: #666666;
+        }
+    }
+
+    //hover: individual post
+    li:hover
+    {
+        background-color: #e4e4e4;
+    }
+}

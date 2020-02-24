@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'bulky media',
+    title: 'bulky media.',
     author: 'Aslan',
   },
   plugins: [
@@ -27,7 +27,25 @@ module.exports = {
         path: `${__dirname}/src/`
       }
     },
-    'gatsby-transformer-remark'
+    'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-relative-images'
+          },
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 1100,
+              linkImagesToOriginal: false,
+              tracedSVG: true,
+            }
+          }
+        ]
+      }
+    },    
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

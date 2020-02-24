@@ -22,3 +22,34 @@ module.exports.onCreateNode = ({ node, actions }) => {
         })
     }
 }
+
+module.exports.createPages = async ({ graphql, actions }) => {
+    const { createPage } = actions
+    //absolute path to blog post template
+    const blogTemplate = path.resolve('./src/templates/blog.js')
+    //graphql query for markdown edges with slugs
+    const response = await graphql(`
+        query {
+            allMarkdownRemark {
+                edges {
+                    node {
+                        fields {
+                            slug
+                        }
+                    }
+                }
+            }
+        }
+    `)
+
+    response.data.allMarkdownRemark.edges.forEach( edge => {
+        createPage({
+            path: `/blog/${edge.node.fields.slug}`,
+            component: blogTemplate,
+            context: 
+            {
+                slug: edge.node.fields.slug
+            }
+        })
+    });
+}
