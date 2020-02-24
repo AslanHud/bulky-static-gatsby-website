@@ -2,12 +2,24 @@ import React from 'react'
 import { Link } from 'gatsby'
 import Layout from '../components/layout'
 
+import indexStyles from './index.module.scss'
+
 const IndexPage = () => {
   return (
-  <Layout>
-      <h1>Index page</h1>
-      <h2>This is the main page of the website.</h2>
-      <Link to="/about">Would you like to know more about bulky media?</Link>
+    <Layout>
+      <div className={indexStyles.container}>
+        <div className={indexStyles.heroBanner}>
+          <div className={indexStyles.bannerText}>
+            <h2>
+              En modern webbyrå i Uppsala
+            </h2>
+            <p>
+              Behöver ditt bolag en ny hemsida eller behöver eran nuvarande hemsida kanske fräschas upp? 
+              Då kan vi på bulky media hjälpa dig! 
+            </p>
+          </div>
+        </div>
+      </div>
     </Layout>
   )
 }

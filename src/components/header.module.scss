@@ -3,9 +3,18 @@
 
 .header
 {
-    padding: 1rem 0 2rem;
+    padding: 1rem 0 0.1rem;
     display: flex;
     justify-content: space-between;
+
+    top: 0;
+    position: sticky;
+
+    background-color: #ffffff;
+    box-shadow: #000000;
+
+    z-index: 999;
+    //padding-bottom: 3rem;
 }
 
 .title
