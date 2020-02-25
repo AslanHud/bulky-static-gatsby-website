@@ -7,6 +7,7 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-image',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -28,6 +29,7 @@ module.exports = {
       }
     },
     'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
