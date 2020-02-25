@@ -1,6 +1,8 @@
 //imported google fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic');
 
+$font-color-main: #212735;
+
 .header
 {
     padding: 1rem 0 0.1rem;
@@ -11,7 +13,7 @@
     position: sticky;
 
     background-color: #ffffff;
-    box-shadow: #000000;
+    box-shadow: $font-color-main;
 
     z-index: 999;
     //padding-bottom: 3rem;
@@ -19,8 +21,8 @@
 
 .title
 {
-    color: #000000;
-    font-size: 2rem;
+    color: $font-color-main;
+    font-size: 1.5rem;
     text-decoration: none;
     flex-grow: 1;
 
@@ -47,7 +49,7 @@
             font-size: 0.75rem; 
             margin-left: 1.8rem;
 
-            color: #000000;
+            color: $font-color-main;
             text-decoration: none;
 
             font-family: "Montserrat";

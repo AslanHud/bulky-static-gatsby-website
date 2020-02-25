@@ -1,5 +1,6 @@
 $font-color-contrast: #212735;
 $font-color-off-contrast: #555555;
+$button-color: #4b4bc3;
 
 .container
 {
@@ -16,7 +17,7 @@ $font-color-off-contrast: #555555;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
     h1, h2, p
     {
@@ -43,9 +44,19 @@ $font-color-off-contrast: #555555;
         padding-top: 5rem;
     }
 
-    img
+    button
     {
-        max-width: 20%;
-        max-height: 50%;
+        border: none;
+        text-decoration: none;
+
+        background-color: $button-color;
+
+        padding: 0.3rem 0.4rem;
+        border-radius: 2px;
+
+        font-size: 1rem;
+        font-family: 'Montserrat';
+        font-weight: 300;
+        color: #ffffff;
     }
 }

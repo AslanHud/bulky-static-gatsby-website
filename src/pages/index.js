@@ -4,9 +4,24 @@ import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
 import indexStyles from './index.module.scss'
-import bannerImg from './website-creation-bg.png'
 
   const IndexPage = () => {
+
+    const data = useStaticQuery(graphql`
+    query
+    {
+      file(relativePath: {eq: "images/website-creation-bg.png"})
+      {
+        childImageSharp
+        {
+          fixed (width: 350, height: 350)
+          {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }    
+    `)
 
   return (
     <Layout>
@@ -20,8 +35,9 @@ import bannerImg from './website-creation-bg.png'
               Behöver ditt bolag en ny hemsida eller behöver eran nuvarande hemsida kanske fräschas upp? 
               Då kan vi på bulky media hjälpa dig! 
             </p>
+            <button>Kontakta oss</button>
           </div>
-          <img src={bannerImg} alt=" " />
+          <Img fixed={ data.file.childImageSharp.fixed} />
         </div>
       </div>
     </Layout>
