@@ -3,6 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
+import Grid from '../components/gridview.js'
+
 import indexStyles from './index.module.scss'
 
   const IndexPage = () => {
@@ -26,7 +28,9 @@ import indexStyles from './index.module.scss'
   return (
     <Layout>
       <div className={indexStyles.container}>
+
         <div className={indexStyles.heroBanner}>
+
           <div className={indexStyles.bannerText}>
             <h1>
               En modern webbyrå i Uppsala
@@ -37,8 +41,10 @@ import indexStyles from './index.module.scss'
             </p>
             <button>Kontakta oss</button>
           </div>
-          <Img fixed={ data.file.childImageSharp.fixed} />
+
         </div>
+
+        <Grid imagesSrc="images/clients"/>
       </div>
     </Layout>
   )

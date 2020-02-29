@@ -23,16 +23,16 @@ const Header = () => {
             <nav className={headerStyles.navMenu}>
                 <ul className={headerStyles.navList}>
                     <li>
-                        <Link to="/">HOME</Link>
+                        <Link to="/about">Arbete</Link>
                     </li>
                     <li>
-                        <Link to="/about">ABOUT</Link>
+                        <Link to="/blog">Blogg</Link>
                     </li>
                     <li>
-                        <Link to="/blog">BLOG</Link>
+                        <Link to="/about">Om oss</Link>
                     </li>
                     <li>
-                        <Link to="/contact">CONTACT US</Link>
+                        <Link to="/contact">Kontakt</Link>
                     </li>
                 </ul>
             </nav>

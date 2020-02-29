@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'bulky media.',
-    author: 'Aslan',
+    author: 'bulky media',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap&subset=cyrillic');
 
 $font-color-main: #212735;
+$font-color-off-contrast: #555555;
 
 .header
 {
@@ -46,19 +47,19 @@ $font-color-main: #212735;
     {
         a
         {
-            font-size: 0.75rem; 
+            font-size: 0.8rem; 
             margin-left: 1.8rem;
 
             color: $font-color-main;
             text-decoration: none;
 
             font-family: "Montserrat";
-            font-weight: 300;
+            font-weight: 500;
         }
 
         a:hover
         {
-            color: #666666;
+            color: $font-color-off-contrast;
         }
     }
 }
